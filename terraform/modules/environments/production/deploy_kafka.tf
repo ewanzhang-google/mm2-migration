@@ -1,6 +1,6 @@
 module "google-managed-kafka-src" {
   source = "../../../modules/google-managed-kafka"
-  project_id = "test-sandbox"
+  project_id = "ewans-demo-project"
   region = "us-central1"
   rebalance_config = "AUTO_REBALANCE_ON_SCALE_UP"
   name = "kafka-src"                                 
@@ -16,7 +16,7 @@ module "google-managed-kafka-src" {
 
 module "google-managed-kafka-dest" {
   source = "../../../modules/google-managed-kafka"
-  project_id = "test-sandbox"
+  project_id = "ewans-demo-project"
   region = "us-central1"
   rebalance_config = "AUTO_REBALANCE_ON_SCALE_UP"
   name = "kafka-dest"                                 
