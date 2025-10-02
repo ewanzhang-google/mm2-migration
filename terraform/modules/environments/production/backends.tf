@@ -6,7 +6,7 @@
 
 terraform {
  backend "gcs" {
-   bucket                      = "bqusagerepo"
+   bucket                      = "ewans-demo-project"
    prefix                      = "terraform" 
    impersonate_service_account = "svc-terraform@test-sandbox.iam.gserviceaccount.com"
  }
